@@ -1,0 +1,118 @@
+.services {
+  width: 100%;
+  height: 1072px;
+  background-color: #0a2a85;
+}
+.services-heading {
+  font-family: "Righteous", cursive;
+  color: #fef9f9;
+  font-size: 72px;
+  font-weight: 400;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/* cards--------------------------------------------------------- */
+.main-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* THE card-container HOLDS EVERYTHING */
+.card-container {
+  /* position: absolute; */
+  width: 450px;
+  height: 460px;
+  background: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 388px;
+
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thecard img {
+  padding-top: 10px;
+  width: 90%;
+}
+.thecard h1 {
+  font-family: "Righteous";
+  padding: 10px 0px;
+  /* font-size: 35px; */
+}
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:active
+    /* ,.thecard:hover */ {
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #ffffff;
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1,
+.theback h1 {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p,
+.theback p {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}

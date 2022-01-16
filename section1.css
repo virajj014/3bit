@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+}
+.bg1 {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.myvideo1 {
+  width: 90%;
+  height: 50%;
+  box-sizing: border-box;
+  margin-top: 50px;
+
+  border-radius: 40px;
+
+  background-color: white;
+}
+
+.getintouch-hireus-btn {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+.mybtn {
+  font-family: "Righteous", cursive;
+  padding: 3px 10px;
+  border: none;
+  background: white;
+  width: 200px;
+  height: 50px;
+
+  color: black;
+  border-radius: 5px;
+  margin-top: 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
