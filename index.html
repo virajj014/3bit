@@ -86,7 +86,7 @@
   <body>
     <nav></nav>
     <div class="bg1">
-      <video class="myvideo1" src="" autoplay loop></video>
+      <video class="myvideo1" src="banner-video.mp4" autoplay loop></video>
       <div class="getintouch-hireus-btn">
         <button class="mybtn">Get in Touch</button>
         <button class="mybtn">Hire Us</button>
@@ -97,7 +97,7 @@
       <h1 class="services-heading">Services We Provide to our client</h1>
       <div class="main-card">
         <div class="card-container">
-          <div class="thecard">
+          <div class="thecard" onclick="Rotatecard1()" id="card1">
             <div class="thefront">
               <img src="webdev.png" alt="" />
               <h1>Web Development</h1>
@@ -111,7 +111,7 @@
               </p>
             </div>
           </div>
-          <div class="thecard">
+          <div class="thecard" onclick="Rotatecard2()" id="card2">
             <div class="thefront">
               <img src="appdev.png" alt="" />
               <h1>Application Development</h1>
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="card-container">
-          <div class="thecard">
+          <div class="thecard" onclick="Rotatecard3()" id="card3">
             <div class="thefront">
               <img src="softwaredev.png" alt="" />
               <h1>Software Development</h1>
@@ -141,7 +141,7 @@
               </p>
             </div>
           </div>
-          <div class="thecard">
+          <div class="thecard" onclick="Rotatecard4()" id="card4">
             <div class="thefront">
               <img src="digitalmarketing.png" alt="" />
               <h1>Digital Marketing</h1>
@@ -159,4 +159,5 @@
       </div>
     </div>
   </body>
+  <script src="cardrotation.js"></script>
 </html>
